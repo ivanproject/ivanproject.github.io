@@ -1,0 +1,52 @@
+
+  nav ul {
+    float: left;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+  }
+  nav ul li a{
+    position:relative;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+    line-height: 70px;
+    font-size: 20px;
+    background: #063247;
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+  }
+  nav ul ul{
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width:160px;
+    display: list-item;
+    position: relative;
+
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -50px;
+    left: 110px;
+  }
